@@ -150,6 +150,14 @@
 - [ ] Save/bookmark CTA toggles saved state for authenticated users and reflects state (icon/label).
 - [ ] Unauthenticated users are redirected to sign-in (email-first plus social options: Facebook, Twitter/X, LinkedIn, Google); return-to path/state preserved; on return, saved state is applied and confirmed.
 
+## Mobile/Responsive Criteria (applies across user stories)
+- [ ] Layout adapts to mobile viewport (e.g., single-column cards, readable text without zoom, no horizontal scroll).
+- [ ] Tap targets meet minimum size (~44px) with adequate spacing; CTAs remain visible and tappable.
+- [ ] Sticky or easily reachable CTAs on profile/message pages (if designed); fixed elements do not obscure content.
+- [ ] Forms (message/intake) fit within viewport, inputs accessible with on-screen keyboard; validation/errors visible without forcing horizontal scroll.
+- [ ] Navigation, filters/sorts, and pagination are usable on mobile (e.g., dropdowns/selects sized for touch); cookie/consent banner does not block primary actions.
+- [ ] Images and maps scale responsively; cards and sections wrap/stack gracefully; footers remain navigable on mobile.
+
 ## Business Logic & Behaviors
 - Ranking: default relevance; distance sort uses geo from selected location (El Segundo centroid unless overridden). Sponsored/featured (if present) are labeled and ranked per ad rules without hiding disclosures.
 - Pagination: consistent page size; URL carries page number; maintaining filters/sort between pages.
