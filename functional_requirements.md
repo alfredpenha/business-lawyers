@@ -1,4 +1,4 @@
-﻿# Functional Requirements – Avvo Business Lawyer Directory (El Segundo, CA)
+# Functional Requirements - Avvo Site “Find a Lawyer” (Business Lawyers, location-specific e.g., El Segundo, CA)
 
 ## User Stories (Canonical, grouped by epic)
 
@@ -159,7 +159,7 @@
 - [ ] Images and maps scale responsively; cards and sections wrap/stack gracefully; footers remain navigable on mobile.
 
 ## Business Logic & Behaviors
-- Ranking: default relevance; distance sort uses geo from selected location (El Segundo centroid unless overridden). Sponsored/featured (if present) are labeled and ranked per ad rules without hiding disclosures.
+- Ranking: default relevance; distance sort uses geo from selected location (e.g., city centroid such as El Segundo unless overridden). Sponsored/featured (if present) are labeled and ranked per ad rules without hiding disclosures.
 - Pagination: consistent page size; URL carries page number; maintaining filters/sort between pages.
 - Contact CTAs: click-to-call logs event; message modal posts lead to backend; ask-a-question deep-link carries attribution; phone numbers formatted for tel links.
 - Message intake form: prefilled with lawyer data; enforces required context dropdowns, location, description length, optional phone callback preference and time-of-day; CAPTCHA required; preserves data on submit failures.
@@ -211,12 +211,16 @@
 - Standard Avvo directory layout and taxonomy are used; no on-page account creation needed.
 - Ratings/reviews are precomputed and supplied by backend; no inline review submission.
 - Sponsored placements, if any, are injected by a ranking service with clear labels.
-- Geo defaults to El Segundo city centroid unless user overrides location.
+- Geo defaults to the selected city centroid (e.g., El Segundo) unless user overrides location.
 - Ask-a-question routes to existing Avvo Q&A flow with attribution.
 - Cookie consent stored client-side (cookie/local storage) and respected.
 - Profile content (about, resume, answers) is read-only here; edits happen elsewhere by the lawyer.
 - Discipline data is provided by a trusted source and flagged for display when present.
 - Save/bookmark uses existing Avvo account system; social logins are federated via OAuth and do not auto-post to networks.
 - Logged-in state is assumed available (account menu, notifications, saved items, asked questions, reviews, sign out); authentication UX itself is out of scope except for redirects from save/bookmark flows.
+- CI/CD and containerization are assumed to be in place (build/test/deploy pipelines using containerized services); establishing the pipeline itself is out of scope.
+
+
+
 
 
