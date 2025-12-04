@@ -2,13 +2,13 @@
 
 ## User Stories (Canonical, grouped by epic)
 
-### Epic: Directory Discovery & Navigation
+### Epic EP-DN: Directory Discovery & Navigation
 - US-DN-1: As a visitor, I want to see the breadcrumb and page title for the practice area and city so that I know I am on the correct directory page.
 - US-DN-2: As a visitor, I want to change the practice area and location via validated inputs so that I can refine the results and share the state through the URL.
 - US-DN-3: As a visitor, I want to sort results (e.g., relevance, distance) so that I can prioritize the list based on my needs and keep the sort in the URL.
 - US-DN-4: As a visitor, I want to page through results with the current page reflected in the URL so that I can browse all options without losing my filters and sort.
 
-### Epic: Directory Results & Lead Capture
+### Epic EP-DR: Directory Results & Lead Capture
 - US-DR-1: As a visitor, I want to scan lawyer cards (name, headshot, Avvo rating meter 0-10, stars, review count, years licensed, practice tags, city/state, distance) so that I can quickly assess fit.
 - US-DR-2: As a visitor, I want to see badges like "Available for hire?" and "Phone consultation available" when applicable so that I know who is reachable and how.
 - US-DR-3: As a visitor, I want to open a lawyer profile by clicking the card/name/photo so that I can view full details, and the click should be tracked.
@@ -22,7 +22,7 @@
 - US-DR-11: As a visitor, I want sponsored listings to be clearly labeled and positioned per business rules so that I can distinguish paid placements from organic results.
 - US-DR-12: As a visitor, I want to complete a detailed message/intake form after clicking Message so that I can provide the attorney with structured information and receive confirmation of submission.
 
-### Epic: Profile Page Experience
+### Epic EP-PF: Profile Page Experience
 - US-PF-1: As a visitor, I want to see a profile header (name, photo, practice, location, rating meter, stars, review count, years licensed, "available for hire" status, discipline note if any) so that I can trust the lawyer's credentials.
 - US-PF-2: As a visitor, I want to use primary CTAs ("Call now", "Message", "Ask a question") from the profile so that I can contact the lawyer directly with confirmation of success/failure.
 - US-PF-3: As a visitor, I want to read the About section with a narrative summary so that I understand the lawyer's focus and background.
@@ -218,8 +218,8 @@
 - Discipline data is provided by a trusted source and flagged for display when present.
 - Save/bookmark uses existing Avvo account system; social logins are federated via OAuth and do not auto-post to networks.
 - Logged-in state is assumed available (account menu, notifications, saved items, asked questions, reviews, sign out); authentication UX itself is out of scope except for redirects from save/bookmark flows.
+- Design assets (e.g., Figma or equivalent) are provided and cover the required states for directory, profile, Pro CTAs, chat, and message intake; implementation follows these designs.
 - CI/CD and containerization are assumed to be in place (build/test/deploy pipelines using containerized services); establishing the pipeline itself is out of scope.
-
 
 
 
